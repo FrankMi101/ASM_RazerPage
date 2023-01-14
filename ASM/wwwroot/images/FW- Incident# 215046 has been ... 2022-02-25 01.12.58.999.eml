@@ -1,0 +1,975 @@
+Received: from EXMS02.tcdsb.org (10.0.42.92) by EXMS02.tcdsb.org (10.0.42.92)
+ with Microsoft SMTP Server (TLS) id 15.0.1497.26 via Mailbox Transport; Fri,
+ 25 Feb 2022 08:12:46 -0500
+Received: from EXMS02.tcdsb.org (10.0.42.92) by EXMS02.tcdsb.org (10.0.42.92)
+ with Microsoft SMTP Server (TLS) id 15.0.1497.26; Fri, 25 Feb 2022 08:12:46
+ -0500
+Received: from CAN01-QB1-obe.outbound.protection.outlook.com (104.47.60.58) by
+ EXMS02.tcdsb.org (10.0.42.92) with Microsoft SMTP Server (TLS) id
+ 15.0.1497.26 via Frontend Transport; Fri, 25 Feb 2022 08:12:46 -0500
+Received: from YT2PR01MB5855.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:57::12)
+ by YT2PR01MB8839.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:ba::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5017.21; Fri, 25 Feb
+ 2022 13:12:46 +0000
+Received: from YT2PR01MB5855.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9c84:6892:5936:3356]) by YT2PR01MB5855.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9c84:6892:5936:3356%3]) with mapi id 15.20.5017.022; Fri, 25 Feb 2022
+ 13:12:46 +0000
+From: "Bottos, Michelle (St Anne Catholic Academy (Jr))"
+	<michelle.bottos@tcdsb.org>
+To: Service Desk <servicedesk@tcdsb.org>
+Subject: FW: Incident# 215046 has been logged for you
+Thread-Topic: Incident# 215046 has been logged for you
+Thread-Index: AQHYKbCgfhTK0GJlOkaFiqVsUMr2e6yjg6EtgAAA2oCAALrOEA==
+Date: Fri, 25 Feb 2022 13:12:46 +0000
+Message-ID:
+	<YT2PR01MB5855B464516752A5A822AA2AFC3E9@YT2PR01MB5855.CANPRD01.PROD.OUTLOOK.COM>
+References: <67acf53b3a874260a4d0dabcb61ad28d@EXMS02.tcdsb.org>
+ <YT2PR01MB60787B6A624F00C208816FA4E03E9@YT2PR01MB6078.CANPRD01.PROD.OUTLOOK.COM>
+ <YT2PR01MB5790C6F30469B46B5246E04DFD3E9@YT2PR01MB5790.CANPRD01.PROD.OUTLOOK.COM>
+In-Reply-To:
+	<YT2PR01MB5790C6F30469B46B5246E04DFD3E9@YT2PR01MB5790.CANPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: YT2PR01MB5855.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:YT2PR01MB5855.CANPRD01.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:;DIR:INB;
+dkim-signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=tcdsbcec.onmicrosoft.com; s=selector2-tcdsbcec-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Lcjn07QqgKnQr1qAklGzmlSgSecAIjk0boSoBN4WwkY=;
+ b=EXrJX+Gu2pwqnpCoVat7p2Z21cRfsYwtZrhaAgmdx6AaYq0nFdD+2408cpHOuLjRh5DZpooUCxlW4JZMIkq1x9L/cMqfWdDN4WSRe6wy3FybIMPEH6vj43/mvPBU7+RbWU5P7uTl/nY26YhfxIBgnwB7+VzjfkjdoSNWRWxIjwI=
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=tcdsb.org;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 19e80921-80bd-40c1-f18d-08d9f86083d1
+x-ms-traffictypediagnostic: YT2PR01MB8839:EE_
+x-microsoft-antispam: BCL:0;
+x-ms-exchange-crosstenant-network-message-id:
+	19e80921-80bd-40c1-f18d-08d9f86083d1
+x-ms-exchange-crosstenant-originalarrivaltime: 25 Feb 2022 13:12:46.1133 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 280c66a1-a414-49a2-88b3-0a28c1799be8
+x-ms-exchange-transport-crosstenantheadersstamped: YT2PR01MB8839
+x-ms-exchange-crosstenant-authsource: YT2PR01MB5855.CANPRD01.PROD.OUTLOOK.COM
+x-ms-exchange-crosstenant-authas: Internal
+x-originatororg: tcdsb.org
+x-organizationheaderspreserved: YT2PR01MB8839.CANPRD01.PROD.OUTLOOK.COM
+x-crosspremisesheaderspromoted: EXMS02.tcdsb.org
+x-crosspremisesheadersfiltered: EXMS02.tcdsb.org
+Content-Type: multipart/related;
+	boundary="_004_YT2PR01MB5855B464516752A5A822AA2AFC3E9YT2PR01MB5855CANP_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+
+--_004_YT2PR01MB5855B464516752A5A822AA2AFC3E9YT2PR01MB5855CANP_
+Content-Type: multipart/alternative;
+	boundary="_000_YT2PR01MB5855B464516752A5A822AA2AFC3E9YT2PR01MB5855CANP_"
+
+--_000_YT2PR01MB5855B464516752A5A822AA2AFC3E9YT2PR01MB5855CANP_
+Content-Type: text/plain; charset="us-ascii"
+
+Good morning,
+
+Can we have this ticket escalated please?
+
+Michelle
+
+Michelle Bottos
+Acting Principal
+St. Anne Catholic Academy, School of Virtual Learning
+Toronto Catholic District School Board
+TCDSB Confidentiality Disclaimer: "This e-mail may be privileged and/or confidential. The sender does not waive any related rights and obligations. Any distribution, use, or copying of this e-mail or the information it contains by anyone other than the intended recipient(s) is unauthorized and may breach the provisions of the Municipal Freedom of Information & Protection of Privacy Act. If you received this e-mail in error, please advise me by return e-mail and delete the material."
+
+From: Chalabi, Najwa (St Anne Catholic Academy (Jr)) <najwa.chalabi@tcdsb.org>
+Sent: Thursday, February 24, 2022 9:05 PM
+To: Sabourin, Isabella (Area 06 - North York) <Isabella.Sabourin@tcdsb.org>; Bottos, Michelle (St Anne Catholic Academy (Jr)) <michelle.bottos@tcdsb.org>
+Subject: RE: Incident# 215046 has been logged for you
+
+Thank you.
+
+Michelle, can you please assist in escalating this ticket to provide IEP access for the OT?
+
+Regards,
+
+Najwa Chalabi -Vice Principal
+[cid:image001.jpg@01D829C2.2F62FBC0]
+80 Sheppard Avenue East, Toronto,
+ON M2N 6E8 - P: 416.393.5569
+
+"It's not about what it is, it's about what it can become"  Dr. Seuss
+__________________________________________________
+TCDSB Confidentiality Disclaimer: "This e-mail may be privileged and/or confidential. The sender does not waive any related rights and obligations. Any distribution, use, or copying of this e-mail or the information it contains by anyone other than the intended recipient(s) is unauthorized and may breach the provisions of the Municipal Freedom of Information & Protection of Privacy Act. If you received this e-mail in error, please advise me by return e-mail and delete the material."
+
+From: Sabourin, Isabella (Area 06 - North York) <Isabella.Sabourin@tcdsb.org<mailto:Isabella.Sabourin@tcdsb.org>>
+Sent: February 24, 2022 9:02 PM
+To: Chalabi, Najwa (St Anne Catholic Academy (Jr)) <najwa.chalabi@tcdsb.org<mailto:najwa.chalabi@tcdsb.org>>
+Subject: Fw: Incident# 215046 has been logged for you
+
+Good evening Najwa,
+
+I hope you are well.
+
+I made a service ticket this afternoon. Here is the confirmation email including the ticket number.
+
+Thank you,
+Isabella
+________________________________
+From: Service Desk <servicedesk@tcdsb.org<mailto:servicedesk@tcdsb.org>>
+Sent: February 24, 2022 1:59 PM
+To: Sabourin, Isabella (Area 06 - North York) <Isabella.Sabourin@tcdsb.org<mailto:Isabella.Sabourin@tcdsb.org>>
+Subject: Incident# 215046 has been logged for you
+
+Hi Isabella Sabourin,
+
+Thank you for contacting the TCDSB Service Desk
+
+The following new incident 215046 is created for you and will be assigned the appropriate resources and priority.
+
+Incident #
+
+215046
+
+Summary:
+
+SPECIAL EDUCATION Application
+
+Customer Name:
+
+Isabella Sabourin
+
+Location:
+
+Area 06 - North York (00010006)
+
+Priority:
+
+3
+
+Status:
+
+Active
+
+Category:
+
+Web Apps
+
+Opened On:
+
+2/24/2022 1:49:59 PM (UTC -05:00) - America/Toronto
+
+
+Description
+
+user is able to login into the Special Services Webapp but is not able to complete the IEP.
+
+User has lost the ability to select students and the class list is missing.
+
+User was able to access this students and class this morning but just before the afternoon user lost access and is not able to complete any IEP
+
+School: St Anne
+
+
+Open My Incident in Self Service<https://tcdsb.saasit.com/Modules/SelfService/?Tab=MyItems&CommandId=ShowRequest&ItemId=E2CB3C14145C4B02873CD6FC2E9819F2>
+
+
+HOW TO CONTACT THE SERVICE DESK:
+
+
+  *   Self Service (from any device):  https://servicedesk.tcdsb.org<https://servicedesk.tcdsb.org/>
+  *   Phone (call in if urgent):            (416) 222-8282, ext. 4357 (HELP)
+  *   Reminder - you can no longer email the Service Desk, see notes below
+
+
+
+  *   The process for requesting ANY ICT services either an Incident (something is broken/not working) or a Service Request (I need access to something/need software, etc.) must start with our Service Desk to ensure requests are properly documented and addressed correctly
+  *   You are asked not to email others in ICT directly simply submit your request to the Service Desk
+  *   DO NOT email the Service Desk (formerly Help Desk), we phased out email submissions to the Service Desk/Help Desk last October  2018 when we changed to Service Desk last year
+  *   If you try to you email us, you will receive a bounce back message noting you cannot email the Service Desk.  Use the Self Service portal it's quick and easy and accessible from any device/anywhere/anytime
+If it's urgent call us
+
+Start all your IT requests with the Service Desk servicedesk.tcdsb.org<http://servicedesk.tcdsb.org/>. Your request is tracked and relayed to the appropriate support staff.
+
+________________________________
+
+TCDSB Confidentiality Disclaimer: "This e-mail may be privileged and/or confidential. The sender does not waive any related rights and obligations. Any distribution, use, or copying of this e-mail or the information it contains by anyone other than the intended recipient(s) is unauthorized and may breach the provisions of the Municipal Freedom of Information & Protection of Privacy Act. If you received this e-mail in error, please advise me by return e-mail and delete the material."
+
+--_000_YT2PR01MB5855B464516752A5A822AA2AFC3E9YT2PR01MB5855CANP_
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Blackadder ITC";
+	panose-1:4 2 5 5 5 16 7 2 13 2;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.xmsohyperlink
+	{mso-style-name:x_msohyperlink;}
+span.EmailStyle23
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:604464546;
+	mso-list-template-ids:-2082336356;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:1105464919;
+	mso-list-template-ids:2135450540;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1988044696;
+	mso-list-template-ids:1106401650;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:2062362765;
+	mso-list-template-ids:-1518981170;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="blue" vlink="purple" style="word-wrap:break-word">
+<div class="WordSection1">
+<p class="MsoNormal">Good morning, <o:p></o:p></p>
+<p class="MsoNormal"><br>
+Can we have this ticket escalated please?<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Michelle<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class="MsoNormal"><b><i><span style="font-size:12.0pt;color:#7030A0">Michelle Bottos<o:p></o:p></span></i></b></p>
+<p class="MsoNormal"><b>Acting Principal <span style="color:#CC00FF"><o:p></o:p></span></b></p>
+<p class="MsoNormal"><b>St. Anne Catholic Academy, School of Virtual Learning<o:p></o:p></b></p>
+<p class="MsoNormal">Toronto Catholic District School Board <o:p></o:p></p>
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><i>TCDSB Confidentiality Disclaimer: &#8220;This e-mail may be privileged and/or confidential. The sender does not waive any related rights and obligations. Any distribution, use, or
+ copying of this e-mail or the information it contains by anyone other than the intended recipient(s) is unauthorized and may breach the provisions of the Municipal Freedom of Information &amp; Protection of Privacy Act. If you received this e-mail in error, please
+ advise me by return e-mail and delete the material.&#8221;</i><o:p></o:p></p>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style="border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b>From:</b> Chalabi, Najwa (St Anne Catholic Academy (Jr)) &lt;najwa.chalabi@tcdsb.org&gt;
+<br>
+<b>Sent:</b> Thursday, February 24, 2022 9:05 PM<br>
+<b>To:</b> Sabourin, Isabella (Area 06 - North York) &lt;Isabella.Sabourin@tcdsb.org&gt;; Bottos, Michelle (St Anne Catholic Academy (Jr)) &lt;michelle.bottos@tcdsb.org&gt;<br>
+<b>Subject:</b> RE: Incident# 215046 has been logged for you<o:p></o:p></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><span lang="EN-CA">Thank you.<o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA">Michelle, can you please assist in escalating this ticket to provide IEP access for the OT?<o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA">Regards,<o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class="MsoNormal"><b><span lang="EN-CA" style="font-size:13.5pt;font-family:&quot;Blackadder ITC&quot;;color:#993366">Najwa Chalabi -Vice Principal
+<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="background:white"><span style="color:black"><img width="259" height="65" style="width:2.6979in;height:.677in" id="Picture_x0020_1" src="cid:image001.jpg@01D829C2.2F62FBC0"></span><b><span lang="EN-CA" style="font-size:9.0pt;color:#44546A"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="background:white"><b><span lang="EN-CA" style="font-size:9.0pt;color:#44546A">80 Sheppard Avenue East, Toronto,
+<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="background:white"><b><span lang="EN-CA" style="font-size:9.0pt;color:#44546A">ON M2N 6E8</span></b><span lang="EN-CA" style="font-size:9.0pt;font-family:&quot;Tahoma&quot;,sans-serif;color:#44546A"> -
+</span><b><span lang="EN-CA" style="font-size:9.0pt;color:#44546A">P:&nbsp;416.393.5569</span></b><span lang="EN-CA" style="font-size:9.0pt;font-family:&quot;Tahoma&quot;,sans-serif;color:#44546A"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><b><span lang="EN-CA" style="font-size:14.0pt;font-family:&quot;Blackadder ITC&quot;">&quot;It's not about what it is, it's about what it can become&quot;&nbsp; Dr. Seuss<o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span lang="EN-CA" style="font-size:13.5pt;font-family:&quot;Blackadder ITC&quot;">__________________________________________________</span></b><span lang="EN-CA"><o:p></o:p></span></p>
+<p class="MsoNormal"><i><span lang="EN-CA" style="font-size:9.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:black;background:white">TCDSB Confidentiality Disclaimer: &#8220;This e-mail may be privileged and/or confidential. The sender does not waive any related rights
+ and obligations. Any distribution, use, or copying of this e-mail or the information it contains by anyone other than the intended recipient(s) is unauthorized and may breach the provisions of the Municipal Freedom of Information &amp; Protection of Privacy Act.
+ If you received this e-mail in error, please advise me by return e-mail and delete the material.&#8221;</span></i><span lang="EN-CA"><o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span lang="EN-CA"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b>From:</b> Sabourin, Isabella (Area 06 - North York) &lt;<a href="mailto:Isabella.Sabourin@tcdsb.org">Isabella.Sabourin@tcdsb.org</a>&gt;
+<br>
+<b>Sent:</b> February 24, 2022 9:02 PM<br>
+<b>To:</b> Chalabi, Najwa (St Anne Catholic Academy (Jr)) &lt;<a href="mailto:najwa.chalabi@tcdsb.org">najwa.chalabi@tcdsb.org</a>&gt;<br>
+<b>Subject:</b> Fw: Incident# 215046 has been logged for you<o:p></o:p></p>
+</div>
+</div>
+<p class="MsoNormal"><span lang="EN-CA"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class="MsoNormal"><span lang="EN-CA">Good evening Najwa,<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA">I hope you are well.<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA">I made a service ticket this afternoon. Here is the confirmation email including the ticket number.<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA">Thank you,<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA">Isabella<o:p></o:p></span></p>
+</div>
+<div class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA">
+<hr size="1" width="98%" align="center">
+</span></div>
+<div id="divRplyFwdMsg">
+<p class="MsoNormal"><b><span lang="EN-CA" style="color:black">From:</span></b><span lang="EN-CA" style="color:black"> Service Desk &lt;<a href="mailto:servicedesk@tcdsb.org">servicedesk@tcdsb.org</a>&gt;<br>
+<b>Sent:</b> February 24, 2022 1:59 PM<br>
+<b>To:</b> Sabourin, Isabella (Area 06 - North York) &lt;<a href="mailto:Isabella.Sabourin@tcdsb.org">Isabella.Sabourin@tcdsb.org</a>&gt;<br>
+<b>Subject:</b> Incident# 215046 has been logged for you</span><span lang="EN-CA">
+<o:p></o:p></span></p>
+<div>
+<p class="MsoNormal"><span lang="EN-CA">&nbsp;<o:p></o:p></span></p>
+</div>
+</div>
+<div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA" style="font-size:10.0pt">Hi Isabella Sabourin,<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA">&nbsp;<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA">Thank you for contacting the TCDSB Service Desk<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA">&nbsp;<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span lang="EN-CA">The following new incident&nbsp;<b>215046</b>&nbsp;is created for you and will be assigned the appropriate resources and priority.<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal" style="margin-bottom:12.0pt"><span lang="EN-CA" style="font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoNormalTable" border="0" cellspacing="6" cellpadding="0" width="800" style="width:600.0pt;background-image:initial;background-position:initial;background-size:initial;background-repeat:initial;background-attachment:initial;background-origin:initial;background-clip:initial">
+<tbody>
+<tr>
+<td style="padding:.45pt .45pt .45pt .45pt">
+<table class="MsoNormalTable" border="0" cellspacing="7" cellpadding="0" width="800" style="width:600.0pt">
+<tbody>
+<tr>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><b><span style="font-size:10.0pt">Incident #</span></b><o:p></o:p></p>
+</div>
+</td>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><b><span style="font-size:10.0pt">215046</span></b><o:p></o:p></p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Summary:</span><o:p></o:p></p>
+</div>
+</td>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">SPECIAL EDUCATION Application
+</span><o:p></o:p></p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Customer Name:</span><o:p></o:p></p>
+</div>
+</td>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Isabella Sabourin</span><o:p></o:p></p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Location:</span><o:p></o:p></p>
+</div>
+</td>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Area 06 - North York (00010006)</span><o:p></o:p></p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Priority:</span><o:p></o:p></p>
+</div>
+</td>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">3</span><o:p></o:p></p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Status:</span><o:p></o:p></p>
+</div>
+</td>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Active</span><o:p></o:p></p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Category:</span><o:p></o:p></p>
+</div>
+</td>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Web Apps</span><o:p></o:p></p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">Opened On:</span><o:p></o:p></p>
+</div>
+</td>
+<td style="padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<div>
+<p class="MsoNormal"><span style="font-size:10.0pt">2/24/2022 1:49:59 PM (UTC -05:00) - America/Toronto</span><o:p></o:p></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="padding:.45pt .45pt .45pt .45pt"></td>
+</tr>
+<tr>
+<td colspan="2" style="background:#CFDFFF;padding:.45pt .45pt .45pt .45pt">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,serif;color:black">Description</span></b><span style="font-size:10.0pt"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding:.45pt .45pt .45pt .45pt">
+<p class="MsoNormal" style="margin-bottom:12.0pt"><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,serif">user is able to login into the Special Services Webapp but is not able to complete the IEP.
+<br>
+<br>
+User has lost the ability to select students and the class list is missing.<br>
+<br>
+User was able to access this students and class this morning but just before the afternoon user lost access and is not able to complete any IEP
+<br>
+<br>
+School: St Anne </span><span style="font-size:10.0pt"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding:.45pt .45pt .45pt .45pt"></td>
+</tr>
+<tr>
+<td colspan="2" style="padding:.45pt .45pt .45pt .45pt">
+<div>
+<div>
+<p class="MsoNormal" style="line-height:13.5pt"><b><span style="font-size:12.0pt"><a href="https://tcdsb.saasit.com/Modules/SelfService/?Tab=MyItems&amp;CommandId=ShowRequest&amp;ItemId=E2CB3C14145C4B02873CD6FC2E9819F2">Open My Incident in Self Service</a></span></b><span style="font-size:10.0pt"><o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:10.0pt;color:red">&nbsp;&nbsp;&nbsp;
+</span></b><span style="font-size:10.0pt"><o:p></o:p></span></p>
+<div>
+<p class="MsoNormal" align="center" style="text-align:center"><b><u><span style="font-size:10.0pt;color:red">HOW TO CONTACT THE SERVICE DESK</span></u></b><b><u><span style="font-size:10.0pt">:</span></u></b><span style="font-size:10.0pt"><o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-size:10.0pt">&nbsp;<o:p></o:p></span></p>
+</div>
+<ul type="disc">
+<li class="xmsonormal" style="mso-list:l1 level1 lfo3"><span style="font-size:10.0pt">Self Service (from any device):&nbsp;&nbsp;<a href="https://servicedesk.tcdsb.org/">https://servicedesk.tcdsb.org</a><o:p></o:p></span></li><li class="xmsonormal" style="mso-list:l1 level1 lfo3"><span style="font-size:10.0pt">Phone (call in if urgent):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (416) 222-8282, ext. 4357 (HELP)<o:p></o:p></span></li><li class="xmsonormal" style="mso-list:l1 level1 lfo3"><span style="font-size:10.0pt">Reminder &#8211; you can no longer email the Service Desk, see notes below<o:p></o:p></span></li></ul>
+<div align="center">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="477" style="width:357.7pt">
+<tbody>
+<tr>
+<td width="100%" style="width:100.0%;padding:0in 0in 0in 0in">
+<div style="margin-left:.25in;margin-bottom:8.0pt">
+<p class="MsoNormal" style="line-height:12.6pt"><b>&nbsp;</b><o:p></o:p></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul type="disc">
+<li class="xmsonormal" style="mso-list:l3 level1 lfo6"><span style="font-size:9.0pt">The process for requesting ANY ICT services either an Incident (something is broken/not working) or a Service Request (I need access to something/need software, etc.) must
+ start with our Service Desk to ensure requests are properly documented and addressed correctly</span><span style="font-size:10.0pt"><o:p></o:p></span></li><li class="xmsonormal" style="mso-list:l3 level1 lfo6"><span style="font-size:9.0pt">You are asked not to email others in ICT directly simply submit your request to the Service Desk</span><span style="font-size:10.0pt"><o:p></o:p></span></li><li class="xmsonormal" style="mso-list:l3 level1 lfo6"><b><span style="font-size:9.0pt">DO NOT email the Service Desk (formerly Help Desk), we phased out email submissions to the Service Desk/Help Desk last October&nbsp; 2018 when we changed to Service Desk&nbsp;last
+ year</span></b><span style="font-size:10.0pt"><o:p></o:p></span></li><li class="xmsonormal" style="mso-list:l3 level1 lfo6"><span style="font-size:9.0pt">If you try to you email us, you will receive a bounce back message noting you cannot email the Service Desk.&nbsp; Use the Self Service portal it&#8217;s quick and easy and accessible
+ from any device/anywhere/anytime</span><span style="font-size:10.0pt"><o:p></o:p></span></li></ul>
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-size:10.0pt">If it&#8217;s urgent call us<o:p></o:p></span></p>
+<div>
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-size:10.0pt">Start all your IT requests with the Service Desk&nbsp;<span class="xmsohyperlink"><a href="http://servicedesk.tcdsb.org/">servicedesk.tcdsb.org</a></span><span style="color:#1F497D">.&nbsp;</span>Your
+ request is tracked and relayed to the appropriate support staff.&nbsp;<o:p></o:p></span></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA">
+<hr size="1" width="100%" align="center">
+</span></div>
+<p><i><span lang="EN-CA" style="font-size:9.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:black">TCDSB Confidentiality Disclaimer: &#8220;This e-mail may be privileged and/or confidential. The sender does not waive any related rights and obligations. Any distribution,
+ use, or copying of this e-mail or the information it contains by anyone other than the intended recipient(s) is unauthorized and may breach the provisions of the Municipal Freedom of Information &amp; Protection of Privacy Act. If you received this e-mail in error,
+ please advise me by return e-mail and delete the material.&#8221;</span></i><span lang="EN-CA" style="font-size:9.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:black"><o:p></o:p></span></p>
+</div>
+</div>
+</body>
+</html>
+
+--_000_YT2PR01MB5855B464516752A5A822AA2AFC3E9YT2PR01MB5855CANP_--
+
+--_004_YT2PR01MB5855B464516752A5A822AA2AFC3E9YT2PR01MB5855CANP_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=4977;
+	creation-date="Fri, 25 Feb 2022 02:05:01 GMT";
+	modification-date="Fri, 25 Feb 2022 13:12:45 GMT"
+Content-ID: <image001.jpg@01D829C2.2F62FBC0>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCABRAUQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDvdu5s
+jqOSPWoDVkkDOB+NMZN/T73860uRYrkUEn8fXHNS+XRsA7U7isQFSxzyferkEBCrnA7mmKu5gPep
+DK5DEYA6DFJsqMR3lKOW/WpbQxi4XodvPFUzlupJ+tWrKPhm9eKkdjQa43cKv4mmxynfh+h7+lNA
+p4HBoCxZC5p4UntUMMmz5T0/lVoUhiKnqacFA7UopaQBRSUUALRRRQAUUUUAFFFFABRRRQAUUUUA
+FMYYp9NNAEZpp609lx9KYetAxpqNztGakJqCY9BQNDC5PemjlhSE05OpNOw7jnXcPeon+U7T2qYd
+aY6hhz19aQJkWaQyfMQeg4FGCrdOnNR7GbnGPrTsDZMTToe5qOMY4Y8VNgKvFFibiF+elFR7h60U
+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
+FFer1Pn1sdJH/rh9asJ94UUVLAkooopAf//Z
+
+--_004_YT2PR01MB5855B464516752A5A822AA2AFC3E9YT2PR01MB5855CANP_--

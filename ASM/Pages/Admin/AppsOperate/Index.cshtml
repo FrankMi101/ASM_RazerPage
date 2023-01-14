@@ -1,0 +1,63 @@
+﻿@page
+@model ASM.Pages.Admin.AppsOperate.IndexModel
+@{
+    ViewData["Title"] = "App List";
+}
+ 
+
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary"> TCDSB Web Application List </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-page="create" class="btn btn-primary">
+                <i class="bi bi-plus-square"></i> &nbsp;
+                Add New Apps
+            </a>
+        </div>
+    </div>
+    <br />
+    <br />
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead><tr><th>Apps ID</th><th>Apps Name</th> <th>Start Date</th> <th>Apps Developer</th><th>Web Site</th><th></th></tr></thead>
+        <tbody>
+            @foreach (var obj in Model.AppsOperate)
+            {
+                <tr>
+                    <td>@obj.AppID</td>
+                    <td>@obj.AppName</td>
+                    <td style="width:120px;">@obj.StartDate.Value.ToString("yyyy-MM-dd") </td>
+                    <td>
+                    <select   asp-for="@obj.DeveloperId"  asp-items="Model.DeveloperList" >
+                    </select>
+                
+                    
+                    </td>
+                    <td>@obj.AppUrl</td>
+                    <td style="width:10%">
+                        <div class="w-50 btn-group" role="group">
+                            <a asp-page="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-3">
+                                <i class="bg-info bi-pencil-square"></i>  
+                            </a>
+                            <a asp-page="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-3">
+                                <i class="bg-info bi-trash-fill"></i> 
+                            </a>
+                            <a asp-page="../AppsModel/Index" asp-route-appId="@obj.AppID" class="btn btn-secondary mx-3">
+                                <i class="bi bi-arrow-right-square"></i>  
+                            </a>
+                            <a asp-page="../AppsModel2/Index" asp-route-appId="@obj.AppID" class="btn btn-secondary mx-3">
+                                <i class="bi bi-arrow-right-square"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+<div>
+    <a asp-page="../../Index">Back to Apps Home</a>
+</div>

@@ -1,0 +1,97 @@
+﻿@page
+@model ASM.Pages.Admin.AppsModel2.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Models  @Model.Models.ModelID of  @Model.Models.AppID </h4>
+<hr />
+<div class="row">
+    <div class="border-bottom p-3 mt-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Models.Id" />
+
+            <div class="row">
+                <div class="form-group col-3">
+                    <label asp-for="Models.AppID" class="control-label"></label>
+                    <input asp-for="Models.AppID" class="form-control" readonly />
+                    <span asp-validation-for="Models.AppID" class="text-danger"></span>
+                </div>
+                <div class="form-group col-3">
+                    <label asp-for="Models.TypeCode" class="control-label"></label>
+                    <select class="form-select" asp-for="Models.TypeCode" asp-items="Model.GrantTypeList">
+                        <option disabled selected> -- Select Access Method -- </option>
+                    </select>
+
+                    <span asp-validation-for="Models.TypeCode" class="text-danger"></span>
+                </div>
+                <div class="col-6"></div>
+                <div class="form-group col-3">
+                    <label asp-for="Models.ModelID" class="control-label "></label>
+                    <input asp-for="Models.ModelID" class="form-control" readonly />
+                    <span asp-validation-for="Models.ModelID" class="text-danger"></span>
+                </div>
+                <div class="form-group col-9">
+                    <label asp-for="Models.ModelName" class="control-label"></label>
+                    <input asp-for="Models.ModelName" class="form-control" />
+                    <span asp-validation-for="Models.ModelName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-3">
+                    <label asp-for="Models.DeveloperId" class="control-label"></label>
+                    <select class="form-select" asp-for="Models.DeveloperId" asp-items="Model.DeveloperList">
+                        <option disabled selected> -- Select Developer -- </option>
+                    </select>
+
+                    <span asp-validation-for="Models.DeveloperId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-9">
+                    <label asp-for="Models.Owners" class="control-label"></label>
+                    <input asp-for="Models.Owners" class="form-control" />
+                    <span asp-validation-for="Models.Owners" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group col-3">
+                    <label asp-for="Models.StartDate" class="control-label"></label>
+                    <input asp-for="Models.StartDate" class="form-control" />
+                    <span asp-validation-for="Models.StartDate" class="text-danger"></span>
+                </div>
+                <div class="form-group col-3">
+                    <label asp-for="Models.EndDate" class="control-label"></label>
+                    <input asp-for="Models.EndDate" class="form-control" />
+                    <span asp-validation-for="Models.EndDate" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Models.Comments" class="control-label"></label>
+                    <textarea asp-for="Models.Comments" rows="3" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index" asp-route-appId="@Model.Models.AppID"> Back to @Model.Models.AppID List</a>
+</div>
+
+@section Scripts {
+<script>
+    tinymce.init({
+      selector: 'textarea',
+      toolbar_mode:'floating',
+    });
+</script>
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

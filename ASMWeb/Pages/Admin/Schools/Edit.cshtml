@@ -1,0 +1,77 @@
+﻿@page
+@model ASMWeb.Pages.Admin.Schools.EditModel
+
+@{
+    ViewData["Title"] = "App Edit Page";
+}
+
+
+<form method="post">
+    <div class="border-bottom p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3"> Edit @Model.School.UnitName  </h2>
+            <input hidden asp-for="School.Id" />
+            <hr />
+        </div>
+        <div asp-validation-summary="All" class="text-danger"> </div>
+        <div class="mb-3 col-3">
+            <label asp-for="School.UnitCode"></label>
+            <input asp-for="School.UnitCode" class="form-control" readonly />
+            <span asp-validation-for="School.UnitCode" class="text-danger"> </span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="School.UnitName"></label>
+            <input asp-for="School.UnitName" class="form-control" readonly />
+            <span asp-validation-for="School.UnitName" class="text-danger"> </span>
+        </div>
+        <div class="mb-3 col-3">
+            <label asp-for="School.BSID"></label>
+            <input asp-for="School.BSID" class="form-control" />
+            <span asp-validation-for="School.BSID"> </span>
+        </div>
+        <div class="mb-3 col-3">
+            <label asp-for="School.PrincipalID"></label>
+
+            <select class="form-select" asp-for="School.PrincipalID" asp-items="Model.PrincipalList">
+                <option disabled selected> -- Select Principal -- </option>
+            </select>
+            <span asp-validation-for="School.PrincipalID" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3 col-3">
+            <label asp-for="School.AreaCode"></label>
+
+            <select class="form-select" asp-for="School.AreaCode" asp-items="Model.AreaList">
+                <option disabled selected> -- Select School Area -- </option>
+            </select>
+            <span asp-validation-for="School.AreaCode" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-3">
+            <label asp-for="School.TypeCode"></label>
+
+            <select class="form-select" asp-for="School.TypeCode" asp-items="Model.PanelList">
+                <option disabled selected> -- Select School Area -- </option>
+            </select>
+            <span asp-validation-for="School.TypeCode" class="text-danger"></span>
+        </div>
+        <div class="mb-3  col-3">
+            <label asp-for="School.DistrictCode"></label>
+
+            <select class="form-select" asp-for="School.DistrictCode" asp-items="Model.DistrictList">
+                <option disabled selected> -- Select School District -- </option>
+            </select>
+            <span asp-validation-for="School.DistrictCode" class="text-danger"></span>
+        </div>
+
+        <div class="row pb-2">
+
+            <button type="submit" class="btn btn-primary" style="width:150px;"> Update </button>
+
+
+            <a asp-page="Index"> Back to List </a>
+
+        </div>
+
+    </div>
+
+</form>

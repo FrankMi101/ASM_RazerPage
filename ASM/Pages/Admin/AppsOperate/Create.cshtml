@@ -1,0 +1,47 @@
+﻿@page
+@model ASM.Pages.Admin.AppsOperate.CreateModel
+ 
+<form method ="post">
+    <div class="border-bottom p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3"> Add New Apps</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All" class="text-danger" > </div>
+        <div class="mb-3">
+           <label asp-for="App.AppID" ></label>
+            <input  asp-for="App.AppID" class="form-control"/>
+            <span asp-validation-for="App.AppID" class="text-danger" > </span>
+        </div>
+         <div class="mb-3">
+           <label asp-for="App.AppName" ></label>
+            <input  asp-for="App.AppName" class="form-control" placeholder="app name" />
+                      <span asp-validation-for="App.AppName"  class="text-danger" > </span>
+        </div>
+         <div class="mb-3">
+           <label asp-for="App.StartDate" ></label>
+            <input  asp-for="App.StartDate" class="form-control"/>
+              <span asp-validation-for="App.StartDate" > </span>
+        </div>
+           <div class="mb-3">
+          <label asp-for="App.DeveloperId" ></label>
+            
+              <select class="form-select" asp-for="App.DeveloperId" asp-items="Model.DeveloperList">
+                    <option disabled selected> -- Select Developer -- </option>
+                </select>
+                <span asp-validation-for="App.DeveloperId" class="text-danger"></span>
+        </div>
+           <div class="mb-3">
+          <label asp-for="App.AppUrl" ></label>
+            <input  asp-for="App.AppUrl" class="form-control" placeholder="Production Web site url"/>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:150px;" > Add </button>
+    </div>
+
+</form>
+@section Scripts{
+    @{
+        <partial name ="_ValidationScriptsPartial"/>
+    }
+}

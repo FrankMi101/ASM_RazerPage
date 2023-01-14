@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!--<ItemGroup>
+    <Content Remove="Pages\AppUser\Staffs\Edit.cshtml" />
+    <Content Remove="Pages\AppUser\Staffs\Index.cshtml" />
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <None Include="Pages\Admin\AppsModel\Create.cshtml" />
+    <None Include="Pages\Admin\AppsModel\Delete.cshtml" />
+    <None Include="Pages\Admin\AppsModel\Details.cshtml" />
+    <None Include="Pages\Admin\AppsModel\Edit.cshtml" />
+    <None Include="Pages\Admin\AppsModel\Index.cshtml" />
+    <None Include="Pages\Admin\AppsModel\Upsert.cshtml" />
+    <None Include="Pages\Admin\AppsOperate\Create.cshtml" />
+    <None Include="Pages\Admin\AppsOperate\Delete.cshtml" />
+    <None Include="Pages\Admin\AppsOperate\Edit.cshtml" />
+    <None Include="Pages\Admin\AppsOperate\Index.cshtml" />
+    <None Include="Pages\Admin\Schools\Edit.cshtml" />
+    <None Include="Pages\Admin\Schools\Index.cshtml" />
+    <None Include="Pages\AppUser\Staffs\Edit.cshtml" />
+    <None Include="Pages\AppUser\Staffs\Index.cshtml" />
+    <None Include="Pages\Error.cshtml" />
+    <None Include="Pages\Index.cshtml" />
+    <None Include="Pages\Privacy.cshtml" />
+    <None Include="Pages\Shared\_Layout.cshtml" />
+    <None Include="Pages\Shared\_Notification.cshtml" />
+    <None Include="Pages\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Pages\_ViewImports.cshtml" />
+    <None Include="Pages\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ASM.Models\ASM.Models.csproj" />
+    <ProjectReference Include="..\ASMWeb.DataAccess\ASMWeb.DataAccess.csproj" />
+    <ProjectReference Include="..\ASMWeb.Utility\ASMWeb.Utility.csproj" />
+    <ProjectReference Include="..\Authen\Authen.csproj" />
+  </ItemGroup>
+
+</Project>

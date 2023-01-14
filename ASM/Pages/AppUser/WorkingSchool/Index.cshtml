@@ -1,0 +1,137 @@
+﻿@page
+@model ASM.Pages.AppUser.WorkingSchool.IndexModel
+@{
+    ViewData["Title"] = "School List";
+ }
+@{
+    var panel = HttpContext.Request.Query["district"];
+    var id = HttpContext.Request.Query["id"];
+    var all = "text-primary";
+    var selected = "text-primary";
+    var east = "text-primary";
+    var west = "text-primary";
+    var north = "text-primary";
+    var south = "text-primary";
+    var center = "text-primary";
+    var board = "text-primary";
+   switch (panel)
+    {
+        case "All":
+            all = "active text-white";
+            break;
+         case "East":
+            east = "active text-white";
+            break;
+       case "West":
+            west = "active text-white";
+            break;
+        case "North":
+            north = "active text-white";
+            break;
+        case "South":
+            south = "active text-white";
+            break;
+        case "Center":
+            center = "active text-white";
+            break;
+        case "Board":
+            board = "active text-white";
+            break;
+        default:
+            selected = "active text-white";
+            break;
+    }
+}
+
+
+<div class="container p-1">
+    <div class="row pt-4">
+        <div class="col-4">
+            <h5 class="text-primary"> School List for @id </h5>
+        </div>
+        <div class="col-8 text-end">
+            <div class="p-2">
+                <ul class="list-group list-group-horizontal-sm">
+                    <a style="text-decoration:none;" asp-page="Index" asp-route-type="District" asp-route-district="Selected" asp-route-id="@id">
+                    <li class="list-group-item @selected">Selected </li>
+                    </a>
+                     <a style="text-decoration:none;" asp-page="Index" asp-route-type="District" asp-route-district="All" asp-route-id="@id">
+                    <li class="list-group-item @all">All </li>
+                    </a>
+                    <a style="text-decoration:none;" asp-page="Index" asp-route-type="District" asp-route-district="East" asp-route-id="@id">
+                    <li class="list-group-item @east">East Area</li>
+                    </a>
+                    <a style="text-decoration:none;" asp-page="Index" asp-route-type="District" asp-route-district="West" asp-route-id="@id">
+                    <li class="list-group-item @west">West Area</li>
+                    </a>
+                    <a style="text-decoration:none;" asp-page="Index" asp-route-type="District" asp-route-district="North" asp-route-id="@id">
+                    <li class="list-group-item @north">North Area</li>
+                    </a>
+                    <a style="text-decoration:none;" asp-page="Index" asp-route-type="District" asp-route-district="South" asp-route-id="@id">
+                    <li class="list-group-item @south">South Area</li>
+                    </a>
+                    <a style="text-decoration:none;" asp-page="Index" asp-route-type="District" asp-route-district="Center" asp-route-id="@id">
+                    <li class="list-group-item  @center">Center Area</li>
+                    </a>
+                      <a style="text-decoration:none;" asp-page="Index" asp-route-type="District" asp-route-district="Board" asp-route-id="@id">
+                    <li class="list-group-item  @board">Board Level</li>
+                    </a>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-5">
+                 <input hidden id="hfUserID" asp-for="InputPara.UserID" />
+
+                 <label class="control-label" asp-for="InputPara.AppsID"></label>
+                <select id="DDLApps" asp-for="InputPara.AppsID" class="form-select" asp-items="Model.AppsList">
+                </select>
+            </div>
+
+            <div class="col-3">
+                  <label class="control-label" asp-for="InputPara.RoleID"></label>
+                     <select id="DDLUserRole" asp-for="InputPara.RoleID" class="form-select" asp-items="Model.RoleList">
+                </select>
+            </div>
+            <div class="col-2">  
+                <label class="control-label" asp-for="InputPara.StartDate"></label>
+                 <input id = "StartDate" asp-for="InputPara.StartDate" class="form-control" />
+            </div>
+            <div class="col-2"> 
+                <label class="contro-label" asp-for="InputPara.EndDate"></label>
+                 <input id = "EndDate" asp-for="InputPara.EndDate" class="form-control" />
+
+            </div>
+        </div>
+
+        <table id="DT_load" class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>School Name</th>
+                    <th>Area </th>
+                    <th>District</th>
+                    <th>App Role</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Select</th>
+                    <th>Actions</th>
+
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+</div>
+
+
+<div>
+    <a asp-page="../Staff/Index">Back to Staff List Home</a>
+</div>
+
+
+@section Scripts{
+<script src="~/js/WorkingSchools.js"></script>
+    }

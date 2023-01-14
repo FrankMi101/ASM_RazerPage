@@ -1,0 +1,146 @@
+﻿@page
+@model ASM.Pages.Admin.Schools.IndexModel
+@{
+    ViewData["Title"] = "School List";
+}
+@{
+    var panel = HttpContext.Request.Query["value"];
+    var allSchool = "text-primary";
+    var elementary = "text-primary";
+    var secondary = "text-primary";
+    var department = "text-primary";
+    switch (panel)
+    {
+        case "Department":
+            department = "active text-white";
+            break;
+        case "Elementary":
+            elementary = "active text-white";
+            break;
+        case "Secondary":
+            secondary = "active text-white";
+            break;
+        default:
+            allSchool = "active text-white";
+            break;
+    }
+}
+
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h4 class="text-primary"> TCDSB School List </h4>
+        </div>
+        <div class="col-6 text-end">
+            <div class="p-2">
+                <ul class="list-group list-group-horizontal-sm">
+                    <a style="text-decoration:none;" asp-page="Index" asp-route-type="All" asp-route-value="All">
+                    <li class="list-group-item @allSchool">All School</li>
+                    </a>
+                    <a style="text-decoration:none;" asp-page="Index" asp-route-type="Panel" asp-route-value="Elementary">
+                    <li class="list-group-item @elementary">Elementary</li>
+                    </a>
+                    <a style="text-decoration:none;" asp-page="Index" asp-route-type="Panel"  asp-route-value="Secondary">
+                    <li class="list-group-item @secondary">Secondary</li>
+                    </a>
+                    <a style="text-decoration:none;" asp-page="Index" asp-route-type="Panel" asp-route-value="Department">
+                    <li class="list-group-item @department">Department</li>
+                    </a>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class=col-8>   </div>
+        <div class="col-4 text-end">
+            <div class="row pt-4">
+                <div class="col-4 text-end">Search By:</div>
+                <div class="col-8">
+                    <select class="form-select mb-3" id="SearchByDDL" asp-for="@Model.SearchBy" asp-items="Model.SearchByList" >
+                    </select>
+                </div>
+                <div class="col-4 text-end">Search Value:</div>
+                <div class="col-8">
+                    <select class="form-select mb-3" id="SearchValueDDL" asp-for="@Model.SearchByValue" asp-items="Model.SearchList">
+                        <option disabled selected> -- Select School District -- </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br />
+        @* <table class="table table-bordered table-striped" style="width:100%">
+            <thead><tr><th>School code</th><th>School Name</th><th>BSID</th><th>Brief Name</th><th>Principal</th><th>Panel</th><th>District</th><th>Area</th><th>Location</th><th> Action</th></tr></thead>
+            <tbody>
+            @foreach (var obj in Model.Schools)
+            {
+            <tr>
+            <td>@obj.UnitCode</td>
+            <td>@obj.UnitName</td>
+            <td>@obj.BSID </td>
+            <td>@obj.BriefName </td>
+            <td>
+            <select disabled  asp-for="@obj.PrincipalID"  asp-items="Model.PrincipalList" >
+            <option disabled selected> -- No Principal -- </option>
+            </select>
+
+            </td>
+            <td>@obj.TypeCode </td>
+            <td>@obj.DistrictCode </td>
+            <td>@obj.AreaCode </td>
+            <td>@obj.Location </td>
+
+            <td style="width:10%">
+            <div class="w-50 btn-group" role="group">
+            <a asp-page="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-3">
+            <i class="bg-info bi-pencil-square"></i>
+            </a>
+            <a asp-page="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-3">
+            <i class="bg-info bi-trash-fill"></i>
+            </a>
+            </div>
+            </td>
+            </tr>
+            }
+            </tbody>
+            </table>*@
+        <table id="DT_load" class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>School Name</th>
+                    <th>BSID</th>
+                    <th>Principal</th>
+                    <th>Area </th>
+                    <th>Panel</th>
+                    <th>District</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+</div>
+
+
+<div>
+    <a asp-page="../../Index">Back to Apps Home</a>
+</div>
+
+
+@section Scripts{
+    <script src="~/js/Schools.js"></script>
+     <script src="~/js/CommonListBuild.js"></script>
+     <script src ="~js/CallWebApi.js"></script>
+    <script>
+        $(function(){
+            $("#SearchByDDL").on("change",function(){
+                var selectValue = $(this).val();
+                var uri = "NameValueList";
+                var data =  WebAPICall.GetData(uri, selectValue);
+                var listDataHtml = 
+                alert("Search by " + selectValue);
+            });
+        });
+    </script>
+    }

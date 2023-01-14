@@ -1,0 +1,115 @@
+﻿@page
+@model ASM.Pages.AppUser.StaffSAP.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    var userId = Request.Query["uId"];
+}
+
+<h1>Create</h1>
+
+
+<h4>Add New Work school and Role for @userId   </h4>
+
+<form method="post">
+    <div>
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="row">
+            <div class="col-1">
+                <label asp-for="Profiles.StaffUserID" class="control-label"></label>
+
+            </div>
+            <div class="col-5">
+                <input value="@userId" asp-for="Profiles.StaffUserID" readonly class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <label asp-for="Profiles.AppID" class="control-label"></label>
+
+            </div>
+            <div class="col-5">
+                <select class="form-select" asp-for="Profiles.AppID" asp-items="Model.AppsList">
+                    <option disabled selected> -- Select App  -- </option>
+                </select>
+                <span asp-validation-for="Profiles.AppID" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <label asp-for="Profiles.AppRole" class="control-label"></label>
+
+            </div>
+            <div class="col-5">
+                <select class="form-select" asp-for="Profiles.AppRole" asp-items="Model.RoleList">
+                    <option disabled selected> -- Select App Role -- </option>
+                </select>
+                <span asp-validation-for="Profiles.AppRole" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <label asp-for="Profiles.GroupType" class="control-label"></label>
+
+            </div>
+            <div class="col-5">
+                <select class="form-select" asp-for="Profiles.GroupType" asp-items="Model.GroupTypeList" asp-page-handler="groupTypeChange" >
+                    <option disabled selected> -- Select Type -- </option>
+                </select>
+                <span asp-validation-for="Profiles.GroupType" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <label asp-for="Profiles.GroupValue" class="control-label"></label>
+            </div>
+            <div class="col-5">
+                <select class="form-select" asp-for="Profiles.GroupValue" asp-items="Model.GroupValueList">
+                    <option disabled selected> -- Select Value -- </option>
+                </select>
+                <span asp-validation-for="Profiles.GroupValue" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"><label asp-for="Profiles.StartDate" class="control-label"></label> </div>
+            <div class="col-2">
+
+                <input asp-for="Profiles.StartDate" class="form-control" />
+                <span asp-validation-for="Profiles.StartDate" class="text-danger"></span>
+            </div>
+
+            <div class="col-1"><label asp-for="Profiles.EndDate" class="control-label"></label> </div>
+            <div class="col-2">
+                <input asp-for="Profiles.EndDate" class="form-control" />
+                <span asp-validation-for="Profiles.EndDate" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">  <label asp-for="Profiles.Comments" class="control-label"></label> </div>
+            <div class="Col-5">
+                <input asp-for="Profiles.Comments" class="form-control" style="height:80px;" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" asp-route-appId="@userId" />
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-page="./Index" asp-route-appId="@userId"> Back to Staff Seacher List </a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

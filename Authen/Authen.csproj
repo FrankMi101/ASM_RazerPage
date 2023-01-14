@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Async\AuthenticationAsync.cs" />
+    <Compile Remove="Async\IAuthenticationAsync.cs" />
+    <Compile Remove="Async\IJWTManagerAsync.cs" />
+    <Compile Remove="Async\JWTManagerAsync.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.22.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="6.0.0" />
+    <PackageReference Include="System.DirectoryServices.Protocols" Version="6.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ASM.DataAccess\ASM.DataAccess.csproj" />
+    <ProjectReference Include="..\ASM.Models\ASM.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Async\" />
+  </ItemGroup>
+
+</Project>

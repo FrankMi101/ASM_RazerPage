@@ -1,0 +1,110 @@
+﻿@page
+@model ASM.Pages.AppUser.Staffs.IndexModel 
+@using Microsoft.Extensions.Options
+@{
+    ViewData["Title"] = "Staff List";
+}
+
+@{
+    var valueUserID = "";//  Request.Form["UserID"];//  []; //
+    var valueFirstName = "";// Request.Form["FirstName"]; //
+    var valueLastName = "";//  Request.Form["LastName"];  
+    var valueEmployeeID = "";// Request.Form["EmployeeID"]; // 
+
+     //foreach(string ax in Request.Form){ 
+     //      if (ax.StartsWith("items_")) {
+     //          string id = ax.Substring(6);
+     //          Response.Write("<br/>" + id +  "-" +Request.Form[ax]); 
+     //      }
+     //  } 
+}
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h4 class="text-primary"> TCDSB Staff List </h4>
+        </div>
+        <div class="col-6 text-end">
+            <div class="p-2">
+                <form method="post">
+                    <ul class="list-group list-group-horizontal-sm">
+                        <input id="UserID" type ="text"  class="form-control" placeholder="User ID" />
+                        <a style="text-decoration:none;" asp-page="Index" asp-route-panel="UserID" asp-route-value="@valueUserID">
+                            <li id="SearchUserID" class="list-group-item"><i class="bi bi-search"></i></li>
+                        </a>
+                        <input id="FirstName"  type ="text" class="form-control" placeholder="First Name" />
+                        <a style="text-decoration:none;" asp-page="Index" asp-route-panel="FirstName" asp-route-value="@valueFirstName">
+                            <li id="SearchFirstName" class="list-group-item hidden"><i class="bi bi-search"></i></li>
+                        </a>
+                        <input id="LastName"  type ="text" class="form-control" placeholder="Last Name" />
+                        <a style="text-decoration:none;"  asp-page="Index" asp-route-panel="LastName" asp-route-value="@valueLastName">
+                            <li id="SearchLastName" class="list-group-item hidden"><i class="bi bi-search"></i></li>
+                        </a>
+                        <input id="EmployeeID"   type ="text" class="form-control" placeholder="Employee ID" />
+                        <a style="text-decoration:none;" asp-page="Index" asp-route-panel="EmployeeID" asp-route-value="@valueEmployeeID">
+                            <li id="SearchEmployeeID" class="list-group-item hidden"><i class="bi bi-search"></i></li>
+                        </a>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div> 
+    @*  <table class="table table-bordered table-striped" style="width:100%">
+        <thead><tr><th>User ID</th><th>Employee ID</th><th>First Name</th><th>Last Name</th><th>School</th><th>Position</th><th>Email</th><th>Status</th><th> Action</th></tr></thead>
+        <tbody>
+        @foreach (var obj in Model.Employees)
+        {
+        <tr>
+        <td>@obj.UserID</td>
+        <td>@obj.EmployeeID</td>
+        <td>@obj.FirstName </td>
+        <td>@obj.LastName </td>
+        <td>
+        <select disabled  asp-for="@obj.UnitID"  asp-items="Model.SchoolList" >
+        <option disabled selected> -- No School -- </option>
+        </select>
+
+        </td>
+        <td>@obj.Position</td>
+        <td>@obj.Email</td>
+        <td>@obj.Status</td>
+
+        <td style="width:10%">
+        <div class="w-50 btn-group" role="group">
+        <a asp-page="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-3">
+        <i class="bg-info bi-pencil-square"></i>
+        </a>
+        <a asp-page="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-3">
+        <i class="bg-info bi-trash-fill"></i>
+        </a>
+        </div>
+        </td>
+        </tr>
+        }
+        </tbody>
+        </table>*@
+    <table id="DT_load" class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Employee ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>School</th>
+                <th>Position </th>
+                <th>Email</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+
+</div>
+<div>
+    <a asp-page="../../Index">Back to Apps Home </a>
+</div>
+
+
+@section Scripts{
+<script src="~/js/Staffs.js"></script>
+}

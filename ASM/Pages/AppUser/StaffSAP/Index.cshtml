@@ -1,0 +1,97 @@
+﻿@page
+@model ASM.Pages.AppUser.StaffSAP.IndexModel
+ 
+@{
+    ViewData["Title"] = "Index";
+      var employeeId = Request.Query["Id"];
+}
+
+ 
+ <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary"> Apps Model List of @employeeId  New test </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-page="Create" asp-route-uId="@employeeId" asp-route-gType="School" class="btn btn-primary">      
+                <i class="bi bi-plus-square"></i>
+                Add New SAP Overwrite Role 
+            </a>
+        </div>
+    </div>
+
+
+<table  class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SapProfileList[0].AppID)              
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SapProfileList[0].AppRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SapProfileList[0].Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SapProfileList[0].GroupType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SapProfileList[0].GroupValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SapProfileList[0].GroupValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SapProfileList[0].StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SapProfileList[0].EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SapProfileList[0].Comments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.SapProfileList)
+        {
+            <tr>
+                <td>
+                    @item.AppID
+                </td>
+                <td>
+                    @item.AppRole
+                </td>
+                <td>
+                    @item.Position
+                </td>
+                <td>
+                      @item.GroupType
+                </td>
+                <td>
+                     @item.GroupValue
+                </td>
+                <td>
+                    @item.GroupName
+                </td>
+                <td>
+                    @item.StartDate.Value.ToString("yyyy-mm-dd") 
+                </td>
+                <td>
+                    @item.EndDate.Value.ToString("yyyy-mm-dd")  
+                </td>
+                <td style="width:25%">
+                    @item.Comments
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a asp-page="../Staff/Index">Back to Staff Search List</a>
+</div>

@@ -1,0 +1,92 @@
+﻿@page
+@model ASM.Pages.Admin.AppsModel.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    var appId = Request.Query["appId"];
+}
+
+<h1>Create</h1>
+
+
+<h4>New Models for @appId   </h4>
+<hr />
+<form method="post">
+    <div class="row">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group col-4">
+            <label asp-for="Models.AppID" class="control-label"></label>
+            <input value="@appId" asp-for="Models.AppID" readonly class="form-control" />
+            <span asp-validation-for="Models.AppID" class="text-danger"></span>
+        </div>
+        <div class="form-group col-4">
+            <label asp-for="Models.ModelID" class="control-label"></label>
+            <input value="Pages" asp-for="Models.ModelID" class="form-control" />
+            <span asp-validation-for="Models.ModelID" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Models.ModelName" class="control-label"></label>
+            <input asp-for="Models.ModelName" class="form-control" />
+            <span asp-validation-for="Models.ModelName" class="text-danger"></span>
+        </div>
+        <div class="form-group col-4">
+            <label asp-for="Models.TypeCode" class="control-label"></label>
+            <select class="form-select" asp-for="Models.TypeCode" asp-items="@(ViewData["GrantTypes"] as IEnumerable<SelectListItem>)">
+                <option disabled selected> -- Select Access Method -- </option>
+            </select>
+
+
+            <span asp-validation-for="Models.TypeCode" class="text-danger"></span>
+        </div>
+        <div class="form-group col-4">
+            <label asp-for="Models.DeveloperId" class="control-label"></label>
+            <select class="form-select" asp-for="Models.DeveloperId" asp-items="@(ViewData["Developers"] as IEnumerable<SelectListItem>)">
+                <option disabled selected> -- Select Developer -- </option>
+            </select>
+
+            <span asp-validation-for="Models.DeveloperId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Models.Owners" class="control-label"></label>
+            <input asp-for="Models.Owners" class="form-control" />
+            <span asp-validation-for="Models.Owners" class="text-danger"></span>
+        </div>
+        <div class="row col-4">
+            <div class="form-group col-6">
+                <label asp-for="Models.StartDate" class="control-label"></label>
+                <input asp-for="Models.StartDate" class="form-control" />
+                <span asp-validation-for="Models.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="Models.EndDate" class="control-label"></label>
+                <input asp-for="Models.EndDate" class="form-control" />
+                <span asp-validation-for="Models.EndDate" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Models.Comments" class="control-label"></label>
+            <textarea asp-for="Models.Comments" class="form-control" style="height:100px;" ></textarea>
+            <span asp-validation-for="Models.Comments" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" asp-route-appId="@appId" />
+        </div>
+    </div>
+</form>
+<div>
+    <a asp-page="./Index" asp-route-appId="@appId"> Back to Application @appId List </a>
+</div>
+
+@section Scripts {
+     <script>
+    tinymce.init({
+      selector: 'textarea',
+      toolbar_mode:'floating',
+    });
+  </script>
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

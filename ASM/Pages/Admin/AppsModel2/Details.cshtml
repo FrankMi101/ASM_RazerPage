@@ -1,0 +1,82 @@
+﻿@page
+@model ASM.Pages.Admin.AppsModel2.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+  
+<h4>Models  @Model.Models.ModelID of  @Model.Models.AppID </h4> 
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Models.AppID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Models.AppID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Models.ModelID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Models.ModelID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Models.ModelName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Models.ModelName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Models.TypeCode)
+        </dt>
+        <dd class="col-sm-10">
+           @* @Html.DisplayFor(model => model.Models.GrantType)*@
+                 <select class="form-select" disabled asp-for="Models.TypeCode" asp-items="@(ViewData["GrantTypes"] as IEnumerable<SelectListItem>)">
+                    <option disabled selected> -- Select Access Method -- </option>
+                </select>
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Models.DeveloperId)
+        </dt>
+        <dd class="col-sm-10">
+           @* @Html.DisplayFor(model => model.Models.Developer) *@
+             <select class="form-select" disabled asp-for="Models.DeveloperId" asp-items="@(ViewData["Developers"] as IEnumerable<SelectListItem>)">
+                    <option disabled selected> -- Select Developer -- </option>
+                </select>
+
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Models.Owners)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Models.Owners)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Models.StartDate)
+        </dt>
+        <dd class="col-sm-10">
+             @Model.Models.StartDate.ToShortDateString()
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Models.EndDate)
+        </dt>
+        <dd class="col-sm-10">
+             @Model.Models.EndDate.ToShortDateString() 
+        </dd>
+        <dt class="col-sm-2">
+          @Html.DisplayNameFor(model => model.Models.Comments)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.Raw(@Model.Models.Comments)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Models.Id">Edit</a> |
+ 
+      <a asp-page="./Index" asp-route-appId="@Model.Models.AppID" > Back to @Model.Models.AppID List</a>
+</div>
